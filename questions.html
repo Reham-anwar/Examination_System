@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        exam page
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container2">
+        <div class="box" id="questionScreen">
+            <div class="title">Exam Questions : </div>
+            <div class="up">
+                <div class="questionNum">Question No : <span></span></div>
+                <div class="timerBox">Time Left : <span></span></div>
+            </div>
+            <div class="questionBox"></div>
+            <div class="optionBox">
+                <span id="check1" onclick="checkAns(this)" data-opt="1"></span>
+                <span id="check2" onclick="checkAns(this)" data-opt="2"></span>
+                <span id="check3" onclick="checkAns(this)" data-opt="3"></span>
+                <span id="check4" onclick="checkAns(this)" data-opt="4"></span>
+            </div>
+
+            <div class="down">
+                <button id="prev" onclick="prev()" style="display: none;">Previous</button>
+                <button id="mark" onclick="mark()">Mark</button>
+                <button id="next" onclick="next()">Next</button>
+
+            </div>
+            <div class="submitBtn">
+                <button id="submit" onclick="check()">Submit</button>
+            </div>
+
+        </div>
+
+        <div class="content-right" style="display: none;">
+            <!-- <header>Mark Menu</header> -->
+            <div class="markMenu">
+                <span id="span0" style="display: none;" onclick="showQuestion(0)">Question one</span>
+                <span id="span1" style="display: none;" onclick="showQuestion(1)">Question two</span>
+                <span id="span2" style="display: none;" onclick="showQuestion(2)">Question three</span>
+                <span id="span3" style="display: none;" onclick="showQuestion(3)">Question four</span>
+                <span id="span4" style="display: none;" onclick="showQuestion(4)">Question five</span>
+                <span id="span5" style="display: none;" onclick="showQuestion(5)">Question six</span>
+                <span id="span6" style="display: none;" onclick="showQuestion(6)">Question seven</span>
+                <span id="span7" style="display: none;" onclick="showQuestion(7)">Question eight</span>
+                <span id="span8" style="display: none;" onclick="showQuestion(8)">Question nine</span>
+                <span id="span9" style="display: none;" onclick="showQuestion(9)">Question ten</span>
+            </div>
+        </div>
+    </div>
+    <!-- score screen -->
+    <div class="box" id="scoreScreen" style="display: none;">
+
+        <div class="title">Exam Score Result : </div>
+        <div class="container2">
+            <div class="resultBox">
+                <h4 id="score">01</h4>
+                <h1></h1>
+                <h2>Mr : </h2>
+                <h3 id="cong">You Have Passed Your Exam</h3>
+                <div class="startBtn">
+                    <a href="exma.html">Try Again</a>
+                </div>
+            </div>
+
+            <div class="succImg">
+                <img src="imgs/fail.png" alt="success logo" id="failImg">
+                <img src="imgs/—Pngtree—colorful new year fireworks clipart_5676581.png" alt="success logo" id="successImg">
+                <img src="imgs/—Pngtree—blue alarm clock beautiful alarm_3877768.png" alt="success logo" id="timeOut">
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
